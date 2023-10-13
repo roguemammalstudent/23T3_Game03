@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Dialogue : MonoBehaviour
 {
@@ -106,6 +107,10 @@ public class Dialogue : MonoBehaviour
             dialogue8.SetActive(false);
         }
 
+        if (dialogue == 9)
+        {
+            SceneManager.LoadScene("Level01");
+        }
     }
 
     public void ChangwDialogue() // connect this to your button to skip dialogue
